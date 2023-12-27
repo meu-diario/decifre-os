@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>(22,2) (30,15) (8,18)</title>
+  <style>
+    body {
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 180vh; /* Ajustado para 100vh para ocupar toda a altura da tela */
+      width: 100vw; /* Ajustado para 100vw para ocupar toda a largura da tela */
+      margin-top: 80px;
+      color: white;
+      position: relative;
+    }
+
+    @font-face {
+      font-family: BloodVaca;
+      src: url(bloodcrow.ttf);
+    }
+
+    img {
+      max-width: 90%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 5vw;
+      font-family: BloodVaca;
+      margin-bottom: 200px;
+    }
+
+    input {
+      padding: 5px;
+      margin-right: 10px;
+    }
+
+    button {
+      padding: 4px;
+      margin-bottom: 10px;
+    }
+
+    #iconeDica {
+      position: fixed;
+      top: 25px;
+      right: 15px;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+    }
+
+    #caixaDica {
+      display: none;
+      position: fixed;
+      top: 70px;
+      right: 45px;
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      color: black;
+      font-size: 15px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <img src="Sobreponha sobre ele.png" alt="isso">
+  <p>Fractal</p>
+  
+  <label for="resposta"><i>Resposta:</i></label>
+  <input type="text" id="resposta" name="resposta">
+  <br>
+  <button onclick="verificarResposta()">Enviar</button>
+
+  <img id="iconeDica" src="Lâmpada.png" alt="Ícone de Dica" onclick="exibirDica()">
+  <div id="caixaDica">Entre os quadrado se esconde um segredo</div>
+
+  <script>
+    function verificarResposta() {
+      var respostaInserida = document.getElementById("resposta").value.toLowerCase();
+      var respostaCorreta = "a mamãe e o papai sumiram"; 
+
+      if (respostaInserida === respostaCorreta) {
+        window.location.href = "Final.html"; 
+      } else {
+        alert("Resposta incorreta. Desista agora.");
+      }
+    }
+
+    function exibirDica() {
+      var caixaDica = document.getElementById("caixaDica");
+      caixaDica.style.display = "block";
+      setTimeout(function() {
+        caixaDica.style.display = "none";
+      }, 5000);
+    }
+  </script>
+</body>
+</html>

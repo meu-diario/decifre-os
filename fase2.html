@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acesse: Etsvme</title>
+  <style>
+    body {
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 180vh; /* Ajustado para 100vh para ocupar toda a altura da tela */
+      width: 100vw; /* Ajustado para 100vw para ocupar toda a largura da tela */
+      margin-top: 0;
+      color: white;
+      position: relative;
+    }
+
+    @font-face {
+      font-family: BloodVaca;
+      src: url(bloodcrow.ttf);
+    }
+
+    img {
+      max-width: 90%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 5vw;
+      font-family: BloodVaca;
+      margin-bottom: 200px;
+      text-align: center;
+    }
+
+    input {
+      padding: 5px;
+      margin-right: 10px;
+    }
+
+    button {
+      padding: 4px;
+      margin-bottom: 10px;
+    }
+
+    #iconeDica {
+      position: fixed;
+      top: 25px;
+      right: 15px;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+    }
+
+    #caixaDica {
+      display: none;
+      position: fixed;
+      top: 70px;
+      right: 45px;
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      color: black;
+      font-size: 15px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <img src="Jan.png" alt="Ache sua cara metade.">
+  <p>❝O antecessor de Augusto<br>está por trás disso.❞
+<br>
+<br>
+IV ad dextram</p>
+  
+  <label for="resposta"><i>Resposta:</i></label>
+  <input type="text" id="resposta" name="resposta">
+  <br>
+  <button onclick="verificarResposta()">Enviar</button>
+
+  <img id="iconeDica" src="Lâmpada.png" alt="Ícone de Dica" onclick="exibirDica()">
+  <div id="caixaDica">Dica: Talvez 'Acesse' seja substituir a 'fase2' na url.</div>
+
+  <script>
+    function verificarResposta() {
+      var respostaInserida = document.getElementById("resposta").value.toLowerCase();
+      var respostaCorreta = "tem alguém lá fora";
+      if (respostaInserida === respostaCorreta) {
+        window.location.href = "fase3.html"; 
+      } else {
+        alert("Resposta incorreta. Desista agora.");
+      }
+    }
+
+    function exibirDica() {
+      var caixaDica = document.getElementById("caixaDica");
+      caixaDica.style.display = "block";
+      setTimeout(function() {
+        caixaDica.style.display = "none";
+      }, 5000);
+    }
+  </script>
+</body>
+</html>
