@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>i</title>
+  <style>
+    body {
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 180vh;
+      width: 100vw;
+      margin-top: 0px;
+      color: white;
+      position: relative;
+    }
+
+    @font-face {
+      font-family: BloodVaca;
+      src: url(bloodcrow.ttf);
+    }
+
+    h8 {
+      font-size: 4vw;
+      font-family: BloodVaca;
+      margin-bottom: 200px;
+      margin-top: 0px;
+      text-align: center;
+    }
+
+   img {
+      max-width: 70%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 3vw;
+      font-family: BloodVaca;
+      margin-bottom: 10px;
+      margin-top: 300px;
+      text-align: center;
+    }
+
+    input {
+      padding: 5px;
+      margin-right: 10px;
+    }
+
+    button {
+      padding: 4px;
+      margin-bottom: 10px;
+    }
+
+    #iconeDica {
+      position: fixed;
+      top: 25px;
+      right: 15px;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+    }
+
+    #caixaDica {
+      display: none;
+      position: fixed;
+      top: 70px;
+      right: 45px;
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      color: black;
+      font-size: 15px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <p>x</p>
+  <img src="S.png" alt="S">
+  <h8>"Nossos maiores sucessos muitas vezes estão<br>nos lugares onde menos temos a<br>coragem de procurar."
+<br>
+<br>
+-Ralph Waldo Emerson</h8>
+  
+  <label for="resposta"><i>Resposta:</i></label>
+  <input type="text" id="resposta" name="resposta">
+  <br>
+  <button onclick="verificarResposta()">Enviar</button>
+
+  <img id="iconeDica" src="Lâmpada.png" alt="Ícone de Dica" onclick="exibirDica()">
+  <div id="caixaDica">Dica: Retroceder pode ajudar.</div>
+
+  <script>
+    function verificarResposta() {
+      var respostaInserida = document.getElementById("resposta").value.toLowerCase();
+      var respostaCorreta = "não consigo me mexer"; 
+
+      if (respostaInserida === respostaCorreta) {
+        window.location.href = "Final.html"; 
+      } else {
+        alert("Resposta incorreta. Desista agora.");
+      }
+    }
+
+    function exibirDica() {
+      var caixaDica = document.getElementById("caixaDica");
+      caixaDica.style.display = "block";
+      setTimeout(function() {
+        caixaDica.style.display = "none";
+      }, 5000);
+    }
+  </script>
+</body>
+</html>
