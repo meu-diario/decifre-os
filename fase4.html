@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Adão</title>
+  <title>💡 14 15 3 5 14 20 18 15 4 1 9 13 7</title>
   <style>
     body {
       background-color: black;
@@ -11,9 +11,8 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 180vh;
-      width: 100vw;
-      margin-top: 10px;
+      margin-bottom: 100px;
+      margin-top: 200px;
       color: white;
       position: relative;
     }
@@ -23,8 +22,14 @@
       src: url(bloodcrow.ttf);
     }
 
+    img {
+      max-width: 60%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
     p {
-      font-size: 3.5vw;
+      font-size: 5vw;
       font-family: BloodVaca;
       margin-bottom: 200px;
       text-align: center;
@@ -64,7 +69,8 @@
   </style>
 </head>
 <body>
-  <p>Jamaica árvore faculdade anel zebra<br>templo enunciado mesa poder olho</p>
+  <img src="Já faz tempo.png" alt="Como me chamo?">
+  <p></p>
   
   <label for="resposta"><i>Resposta:</i></label>
   <input type="text" id="resposta" name="resposta">
@@ -72,7 +78,7 @@
   <button onclick="verificarResposta()">Enviar</button>
 
   <img id="iconeDica" src="Lâmpada.png" alt="Ícone de Dica" onclick="exibirDica()">
-  <div id="caixaDica">Dica: "Os primeiros serão exaltados e os últimos serão os primeiros."  -Jesus</div>
+  <div id="caixaDica">Dica: Se letras fossem números esse enigma seria mais fácil.</div>
 
   <script>
     function verificarResposta() {
@@ -80,7 +86,7 @@
       var respostaCorreta = "já faz tempo"; 
 
       if (respostaInserida === respostaCorreta) {
-        window.location.href = "Final.html"; 
+        window.location.href = "fase5.html"; 
       } else {
         alert("Resposta incorreta. Desista agora.");
       }
