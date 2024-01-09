@@ -23,42 +23,50 @@
     }
 
     a {
-      font-size: 4vw;
+      font-size: 15px;
       font-family: BloodVaca;
       margin-bottom: 300px;
-      color: #ece5e5;
+      color: #dadada;
       text-align: center;
     }
 
     input {
-      padding: 5px;
+      padding: 7px;
       margin-right: 10px;
+      margin-bottom: 8px;
+      font-size: 12px;
+      width: 155px;
+      height: 3px;
     }
 
     button {
-      padding: 4px;
-      margin-bottom: 10px;
+      padding: 0px;
+      margin-bottom: 50px;
+      width: 40px;
+      height: 20px;
+      font-size: 10px
     }
 
     #iconeDica {
       position: fixed;
-      top: 25px;
-      right: 15px;
-      width: 40px;
-      height: 40px;
+      top: 14px;
+      right: 9px;
+      width: 30px;
+      height: 30px;
       cursor: pointer;
     }
 
     #caixaDica {
       display: none;
       position: fixed;
-      top: 70px;
-      right: 45px;
-      padding: 10px;
-      background-color: rgba(255, 255, 255, 0.8);
+      top: 45px;
+      right: 32px;
+      padding: 8px;
+      background-color: rgba(255, 255, 255, 0.7);
       border-radius: 10px;
+      border-top-right-radius: 1px;
       color: black;
-      font-size: 15px;
+      font-size: 10px;
       text-align: center;
     }
   </style>
@@ -68,7 +76,6 @@
   
   <label for="resposta"><i>Resposta:</i></label>
   <input type="text" id="resposta" name="resposta">
-  <br>
   <button onclick="verificarResposta()">Enviar</button>
 
   <img id="iconeDica" src="Lâmpada.png" alt="Ícone de Dica" onclick="exibirDica()">
