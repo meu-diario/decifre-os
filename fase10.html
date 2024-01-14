@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Acesse o nome</title>
+  <title>Acesse o Estado</title>
   <style>
     body {
       background-color: black;
@@ -12,7 +12,7 @@
       align-items: center;
       justify-content: center;
       margin-bottom: 100px;
-      margin-top: 100px;
+      margin-top: 110px;
       color: white;
       position: relative;
     }
@@ -22,13 +22,28 @@
       src: url(bloodcrow.ttf);
     }
 
-    a {
-      font-size: 15px;
-      font-family: BloodVaca;
-      margin-bottom: 300px;
-      color: #dadada;
-      text-align: center;
+    img {
+      max-width: 35%;
+      height: auto;
+      margin-bottom: 20px;
     }
+
+        h8 {
+            font-family: BloodVaca;
+            margin-right: 0px;
+            margin-left: 0px;
+            margin-bottom: 200px;
+            font-size: 15px;
+        }
+
+        h8 img {
+            margin-right: 0px;
+            position: relative;
+            top: 20px;
+            right: 2px;
+            width: 10px;
+            height: 10px;
+        }
 
     input {
       padding: 7px;
@@ -72,22 +87,23 @@
   </style>
 </head>
 <body>
-   <a href="https://twitter.com/CafezinKoshi/status/1734291218333311184?s=19">Não olhe para ele</a>
+  <img src="Acta Eruditorum - III musa arabum pala plinii, 1734.jpg" alt="A Musa">
+  <h8><img src="Ícone da Positivo.png" alt="Ícone da Positivo">sessenta e um.</h8>
   
   <label for="resposta"><i>Resposta:</i></label>
   <input type="text" id="resposta" name="resposta">
   <button onclick="verificarResposta()">Enviar</button>
 
   <img id="iconeDica" src="Lâmpada.png" alt="Ícone de Dica" onclick="exibirDica()">
-  <div id="caixaDica">Dica: Euclides ou até Claude Monet ficariam felizes em poder te ajudar.</div>
+  <div id="caixaDica">Dica: Ligar para um canguru pode te auxiliar.</div>
 
   <script>
     function verificarResposta() {
       var respostaInserida = document.getElementById("resposta").value.toLowerCase();
-      var respostaCorreta = "ele sussurrou meu nome"; 
+      var respostaCorreta = "Ele me abraçou"; 
 
       if (respostaInserida === respostaCorreta) {
-        window.location.href = "fase10.html"; 
+        window.location.href = "Final.html"; 
       } else {
         alert("Resposta incorreta. Desista agora.");
       }
