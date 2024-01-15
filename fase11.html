@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Acesse o Estado</title>
+  <title>#DFDF20 #FFFFFF #8F20DF #000000</title>
   <style>
     body {
       background-color: black;
@@ -23,27 +23,19 @@
     }
 
     img {
-      max-width: 35%;
+      max-width: 20%;
       height: auto;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
 
-        h8 {
-            font-family: BloodVaca;
-            margin-right: 0px;
-            margin-left: 0px;
-            margin-bottom: 200px;
-            font-size: 15px;
-        }
-
-        h8 img {
-            margin-right: 0px;
-            position: relative;
-            top: 20px;
-            right: 2px;
-            width: 10px;
-            height: 10px;
-        }
+    p {
+      font-size: 15px;
+      font-family: BloodVaca;
+      margin-bottom: 200px;
+      margin-right: 40px;
+      margin-left: 40px;
+      text-align: center;
+    }
 
     input {
       padding: 7px;
@@ -87,23 +79,23 @@
   </style>
 </head>
 <body>
-  <img src="Acta Eruditorum - III musa arabum pala plinii, 1734.jpg" alt="A Musa">
-  <h8><img src="Ícone da Positivo.png" alt="Ícone da Positivo">sessenta e um.</h8>
+  <img src="dica 4, letras = quadrados.png" alt="Decodifique.">
+  <p>❝Não, não é só um pedaço de pano simples, em seu<br>conteúdo é representada toda a história de<br>um povo, suas convicções, lutas e esperanças.<br>Deve ser sempre hasteada em um mastro, é um<br>dos símbolos universais mais abrangentes.❞</p>
   
   <label for="resposta"><i>Resposta:</i></label>
   <input type="text" id="resposta" name="resposta">
   <button onclick="verificarResposta()">Enviar</button>
 
   <img id="iconeDica" src="Lâmpada.png" alt="Ícone de Dica" onclick="exibirDica()">
-  <div id="caixaDica">Dica: Pense na possibilidade de ligar para um canguru caso precise.</div>
+  <div id="caixaDica">Dica: Use as cores e crie um símbolo visual representativo.</div>
 
   <script>
     function verificarResposta() {
       var respostaInserida = document.getElementById("resposta").value.toLowerCase();
-      var respostaCorreta = "ele me abraçou"; 
+      var respostaCorreta = "que sensação"; 
 
       if (respostaInserida === respostaCorreta) {
-        window.location.href = "fase11.html"; 
+        window.location.href = "Final.html"; 
       } else {
         alert("Resposta incorreta. Desista agora.");
       }
