@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>100 jardas</title>
+  <title>Acesse o Estado</title>
   <style>
     body {
       background-color: black;
@@ -12,7 +12,7 @@
       align-items: center;
       justify-content: center;
       margin-bottom: 100px;
-      margin-top: 100px;
+      margin-top: 110px;
       color: white;
       position: relative;
     }
@@ -23,17 +23,27 @@
     }
 
     img {
-      max-width: 60%;
+      max-width: 35%;
       height: auto;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
 
-    p {
-      font-size: 20px;
-      font-family: BloodVaca;
-      margin-bottom: 200px;
-      text-align: center;
-    }
+        h8 {
+            font-family: BloodVaca;
+            margin-right: 0px;
+            margin-left: 0px;
+            margin-bottom: 200px;
+            font-size: 20px;
+        }
+
+        h8 img {
+            margin-right: 0px;
+            position: relative;
+            top: 20px;
+            right: 2px;
+            width: 14px;
+            height: 14px;
+        }
 
     input {
       padding: 7px;
@@ -79,25 +89,25 @@
   <script src="sha256.js"></script>
 </head>
 <body>
-  <img src="Teste.png" alt="Gatito de guerra">
-  <p>abra os olhos</p>
+  <img src="Acta Eruditorum - III musa arabum pala plinii, 1734.jpg" alt="A Musa">
+  <h8><img src="Ícone da Positivo.png" alt="Ícone da Positivo">sessenta e um.</h8>
   
   <label for="resposta"><i>Resposta:</i></label>
   <input type="text" id="resposta" name="resposta">
   <button onclick="verificarResposta()">Enviar</button>
 
   <img id="iconeDica" src="Lâmpada.png" alt="Ícone de Dica" onclick="exibirDica()">
-  <div id="caixaDica">Dica: exemplo</div>
+  <div id="caixaDica">Dica: Pense na possibilidade de ligar para um canguru caso precise.</div>
 
   <script>
   function verificarResposta() {
     var respostaInserida = document.getElementById("resposta").value;
-    var respostaCorretaHash = "ba1ca8391e6f5385c8f396269868f8ef9be0d85c6d425dde0dce5a00a8528120";
+    var respostaCorretaHash = "8aaf2cc63e6ad61dca57ff021900158f881d8faadd20b08d62c8f5d4469e4e40";
 
     var hashInserida = CryptoJS.SHA256(respostaInserida).toString();
 
     if (hashInserida === respostaCorretaHash) {
-      window.location.href = "respostaCorretaHash, 1.0)";
+      window.location.href = "respostaCorretaHash, 1.1)";
     } else {
       alert("❌ Resposta incorreta. (Verifique se a primeira letra está maiúscula ou se há algum espaço no final.)");
     }

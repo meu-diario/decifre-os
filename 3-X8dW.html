@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>100 jardas</title>
+  <title>(22,2) (30,15) (8,18)</title>
   <style>
     body {
       background-color: black;
@@ -12,7 +12,7 @@
       align-items: center;
       justify-content: center;
       margin-bottom: 100px;
-      margin-top: 100px;
+      margin-top: 50px;
       color: white;
       position: relative;
     }
@@ -23,16 +23,15 @@
     }
 
     img {
-      max-width: 60%;
+      max-width: 30%;
       height: auto;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
 
     p {
       font-size: 20px;
       font-family: BloodVaca;
       margin-bottom: 200px;
-      text-align: center;
     }
 
     input {
@@ -79,37 +78,29 @@
   <script src="sha256.js"></script>
 </head>
 <body>
-  <img src="Teste.png" alt="Gatito de guerra">
-  <p>abra os olhos</p>
+  <img src="Sobreponha sobre ele.png" alt="isso">
+  <p>Fractal</p>
   
   <label for="resposta"><i>Resposta:</i></label>
   <input type="text" id="resposta" name="resposta">
   <button onclick="verificarResposta()">Enviar</button>
 
   <img id="iconeDica" src="Lâmpada.png" alt="Ícone de Dica" onclick="exibirDica()">
-  <div id="caixaDica">Dica: exemplo</div>
+  <div id="caixaDica">Dica: As bonecas russas seriam um bom exemplo para este enigma.</div>
 
   <script>
   function verificarResposta() {
     var respostaInserida = document.getElementById("resposta").value;
-    var respostaCorretaHash = "ba1ca8391e6f5385c8f396269868f8ef9be0d85c6d425dde0dce5a00a8528120";
+    var respostaCorretaHash = "edfe0f7c38cd8c47a62e66f0c948882f56e1f027652de936517f30c01b20701b";
 
     var hashInserida = CryptoJS.SHA256(respostaInserida).toString();
 
     if (hashInserida === respostaCorretaHash) {
-      window.location.href = "respostaCorretaHash, 1.0)";
+      window.location.href = "respostaCorretaHash, 0.4)";
     } else {
       alert("❌ Resposta incorreta. (Verifique se a primeira letra está maiúscula ou se há algum espaço no final.)");
     }
   }
-
-    function exibirDica() {
-      var caixaDica = document.getElementById("caixaDica");
-      caixaDica.style.display = "block";
-      setTimeout(function() {
-        caixaDica.style.display = "none";
-      }, 5000);
-    }
   </script>
 </body>
 </html>

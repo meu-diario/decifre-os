@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>100 jardas</title>
+  <title>Adão</title>
   <style>
     body {
       background-color: black;
@@ -20,12 +20,6 @@
     @font-face {
       font-family: BloodVaca;
       src: url(bloodcrow.ttf);
-    }
-
-    img {
-      max-width: 60%;
-      height: auto;
-      margin-bottom: 10px;
     }
 
     p {
@@ -74,20 +68,20 @@
       font-size: 15px;
       text-align: center;
     }
-  </style>
+</style>
   <script src="core.js"></script>
   <script src="sha256.js"></script>
 </head>
+
 <body>
-  <img src="Teste.png" alt="Gatito de guerra">
-  <p>abra os olhos</p>
+  <p>Escada sapo tatú olho unha comer oponente<br>maria marte entrar dedo orifício </p>
   
   <label for="resposta"><i>Resposta:</i></label>
   <input type="text" id="resposta" name="resposta">
   <button onclick="verificarResposta()">Enviar</button>
 
   <img id="iconeDica" src="Lâmpada.png" alt="Ícone de Dica" onclick="exibirDica()">
-  <div id="caixaDica">Dica: exemplo</div>
+  <div id="caixaDica">Dica: "Os primeiros serão exaltados e os últimos serão os primeiros."  -Jesus</div>
 
   <script>
   function verificarResposta() {
@@ -97,7 +91,7 @@
     var hashInserida = CryptoJS.SHA256(respostaInserida).toString();
 
     if (hashInserida === respostaCorretaHash) {
-      window.location.href = "respostaCorretaHash, 1.0)";
+      window.location.href = "respostaCorretaHash, 0.2)";
     } else {
       alert("❌ Resposta incorreta. (Verifique se a primeira letra está maiúscula ou se há algum espaço no final.)");
     }

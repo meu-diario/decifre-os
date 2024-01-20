@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>100 jardas</title>
+  <title>Acesse: etsvme</title>
   <style>
-    body {
+   body {
       background-color: black;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       margin-bottom: 100px;
-      margin-top: 100px;
+      margin-top: 30px;
       color: white;
       position: relative;
     }
@@ -23,9 +23,9 @@
     }
 
     img {
-      max-width: 60%;
+      max-width: 50%;
       height: auto;
-      margin-bottom: 10px;
+      margin-bottom: 0px;
     }
 
     p {
@@ -78,28 +78,32 @@
   <script src="core.js"></script>
   <script src="sha256.js"></script>
 </head>
+</head>
 <body>
-  <img src="Teste.png" alt="Gatito de guerra">
-  <p>abra os olhos</p>
+  <img src="Jan.png" alt="Ache sua cara metade.">
+  <p>❝O antecessor de Otaviano Augusto<br>está por trás disso.❞
+<br>
+<br>
+IV ad dextram</p>
   
   <label for="resposta"><i>Resposta:</i></label>
   <input type="text" id="resposta" name="resposta">
   <button onclick="verificarResposta()">Enviar</button>
 
   <img id="iconeDica" src="Lâmpada.png" alt="Ícone de Dica" onclick="exibirDica()">
-  <div id="caixaDica">Dica: exemplo</div>
+  <div id="caixaDica">Dica: Talvez 'Acesse' seja substituir a 'fase2' na URL. Lembre-se disso, você precisará disso no decorrer dos próximos enigmas.</div>
 
   <script>
   function verificarResposta() {
     var respostaInserida = document.getElementById("resposta").value;
-    var respostaCorretaHash = "ba1ca8391e6f5385c8f396269868f8ef9be0d85c6d425dde0dce5a00a8528120";
+    var respostaCorretaHash = "abd38b436342043cd4d087e197cb293e88ff13c801718f45c066cf773b0200be";
 
     var hashInserida = CryptoJS.SHA256(respostaInserida).toString();
 
     if (hashInserida === respostaCorretaHash) {
-      window.location.href = "respostaCorretaHash, 1.0)";
+      window.location.href = "respostaCorretaHash, 0.3)";
     } else {
-      alert("❌ Resposta incorreta. (Verifique se a primeira letra está maiúscula ou se há algum espaço no final.)");
+      alert("❌ Resposta incorreta. (Verifique se a primeira letra está maiúscula ou se há algum espaço no final.)(O português está correto?)");
     }
   }
 

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>100 jardas</title>
+  <title>i</title>
   <style>
     body {
       background-color: black;
@@ -22,16 +22,25 @@
       src: url(bloodcrow.ttf);
     }
 
-    img {
-      max-width: 60%;
+    h8 {
+      font-size: 15px;
+      font-family: BloodVaca;
+      margin-bottom: 200px;
+      margin-top: 0px;
+      text-align: center;
+    }
+
+   img {
+      max-width: 50%;
       height: auto;
       margin-bottom: 10px;
     }
 
     p {
-      font-size: 20px;
+      font-size: 15px;
       font-family: BloodVaca;
-      margin-bottom: 200px;
+      margin-bottom: 10px;
+      margin-top: 0px;
       text-align: center;
     }
 
@@ -71,7 +80,7 @@
       border-radius: 10px;
       border-top-right-radius: 1px;
       color: black;
-      font-size: 15px;
+      font-size: 10px;
       text-align: center;
     }
   </style>
@@ -79,25 +88,29 @@
   <script src="sha256.js"></script>
 </head>
 <body>
-  <img src="Teste.png" alt="Gatito de guerra">
-  <p>abra os olhos</p>
+  <p>x</p>
+  <img src="S.png" alt="S">
+  <h8>❝Nossos maiores sucessos muitas vezes<br>estão nos lugares onde menos temos a<br>coragem de procurar.❞
+<br>
+<br>
+-Ralph Waldo Emerson</h8>
   
   <label for="resposta"><i>Resposta:</i></label>
   <input type="text" id="resposta" name="resposta">
   <button onclick="verificarResposta()">Enviar</button>
 
   <img id="iconeDica" src="Lâmpada.png" alt="Ícone de Dica" onclick="exibirDica()">
-  <div id="caixaDica">Dica: exemplo</div>
+  <div id="caixaDica">Dica: As vezes retroceder pode ajudar.</div>
 
   <script>
   function verificarResposta() {
     var respostaInserida = document.getElementById("resposta").value;
-    var respostaCorretaHash = "ba1ca8391e6f5385c8f396269868f8ef9be0d85c6d425dde0dce5a00a8528120";
+    var respostaCorretaHash = "31691d7ef8d28c88d2cc8e901b97558470ad59e583eb0e0e4bdb755d05353d71";
 
     var hashInserida = CryptoJS.SHA256(respostaInserida).toString();
 
     if (hashInserida === respostaCorretaHash) {
-      window.location.href = "respostaCorretaHash, 1.0)";
+      window.location.href = "respostaCorretaHash, 0.9)";
     } else {
       alert("❌ Resposta incorreta. (Verifique se a primeira letra está maiúscula ou se há algum espaço no final.)");
     }

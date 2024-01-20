@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>100 jardas</title>
+  <title>#DFDF20 #FFFFFF #8F20DF #000000</title>
   <style>
     body {
       background-color: black;
@@ -12,7 +12,7 @@
       align-items: center;
       justify-content: center;
       margin-bottom: 100px;
-      margin-top: 100px;
+      margin-top: 110px;
       color: white;
       position: relative;
     }
@@ -23,15 +23,17 @@
     }
 
     img {
-      max-width: 60%;
+      max-width: 20%;
       height: auto;
-      margin-bottom: 10px;
+      margin-bottom: 30px;
     }
 
     p {
       font-size: 20px;
       font-family: BloodVaca;
       margin-bottom: 200px;
+      margin-right: 0px;
+      margin-left: 0px;
       text-align: center;
     }
 
@@ -79,25 +81,25 @@
   <script src="sha256.js"></script>
 </head>
 <body>
-  <img src="Teste.png" alt="Gatito de guerra">
-  <p>abra os olhos</p>
+  <img src="dica 4, letras = quadrados.png" alt="Decodifique.">
+  <p>❝Não é só um pedaço de pano simples, em seu<br>conteúdo é representada toda a história de<br>um povo, suas convicções, lutas e esperanças.❞</p>
   
   <label for="resposta"><i>Resposta:</i></label>
   <input type="text" id="resposta" name="resposta">
   <button onclick="verificarResposta()">Enviar</button>
 
   <img id="iconeDica" src="Lâmpada.png" alt="Ícone de Dica" onclick="exibirDica()">
-  <div id="caixaDica">Dica: exemplo</div>
+  <div id="caixaDica">Dica: Use as cores e crie um símbolo visual representativo.</div>
 
   <script>
   function verificarResposta() {
     var respostaInserida = document.getElementById("resposta").value;
-    var respostaCorretaHash = "ba1ca8391e6f5385c8f396269868f8ef9be0d85c6d425dde0dce5a00a8528120";
+    var respostaCorretaHash = "fecef0bd1fd6ac85aba47571937c9a60c0ae8a6935872c82af20a90446a5b7fc";
 
     var hashInserida = CryptoJS.SHA256(respostaInserida).toString();
 
     if (hashInserida === respostaCorretaHash) {
-      window.location.href = "respostaCorretaHash, 1.0)";
+      window.location.href = "respostaCorretaHash, 0.0)";
     } else {
       alert("❌ Resposta incorreta. (Verifique se a primeira letra está maiúscula ou se há algum espaço no final.)");
     }

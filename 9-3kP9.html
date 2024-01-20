@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>100 jardas</title>
+  <title>Acesse o nome</title>
   <style>
     body {
       background-color: black;
@@ -22,16 +22,18 @@
       src: url(bloodcrow.ttf);
     }
 
-    img {
-      max-width: 60%;
-      height: auto;
-      margin-bottom: 10px;
+    a {
+      font-size: 25px;
+      font-family: BloodVaca;
+      margin-bottom: 20px;
+      color: white;
+      text-align: center;
     }
 
     p {
-      font-size: 20px;
+      font-size: 25px;
       font-family: BloodVaca;
-      margin-bottom: 200px;
+      margin-bottom: 300px;
       text-align: center;
     }
 
@@ -79,20 +81,21 @@
   <script src="sha256.js"></script>
 </head>
 <body>
-  <img src="Teste.png" alt="Gatito de guerra">
-  <p>abra os olhos</p>
+   <a href="https://twitter.com/CafezinKoshi/status/1734291218333311184?s=19">Não olhe para ele</a>
   
+   <p>Octótropo dadada</p>
+
   <label for="resposta"><i>Resposta:</i></label>
   <input type="text" id="resposta" name="resposta">
   <button onclick="verificarResposta()">Enviar</button>
 
   <img id="iconeDica" src="Lâmpada.png" alt="Ícone de Dica" onclick="exibirDica()">
-  <div id="caixaDica">Dica: exemplo</div>
+  <div id="caixaDica">Dica: Euclides ou até Claude Monet ficariam felizes em poder te ajudar.</div>
 
   <script>
   function verificarResposta() {
     var respostaInserida = document.getElementById("resposta").value;
-    var respostaCorretaHash = "ba1ca8391e6f5385c8f396269868f8ef9be0d85c6d425dde0dce5a00a8528120";
+    var respostaCorretaHash = "cdf47da3e2cfcdd4de92789d9d6b657f35dbb5e6399bce18ab7fb98e126e03d3";
 
     var hashInserida = CryptoJS.SHA256(respostaInserida).toString();
 
