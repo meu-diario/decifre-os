@@ -101,6 +101,14 @@
       alert("❌ Resposta incorreta. (Verifique se a primeira letra está maiúscula ou se há algum espaço no final.)");
     }
   }
+
+    function exibirDica() {
+      var caixaDica = document.getElementById("caixaDica");
+      caixaDica.style.display = "block";
+      setTimeout(function() {
+        caixaDica.style.display = "none";
+      }, 5000);
+    }
   </script>
 </body>
 </html>

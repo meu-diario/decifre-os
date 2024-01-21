@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Este é o Nome da Aba</title>
+  <title>Acesse, ↻</title>
   <style>
     body {
       background-color: black;
@@ -23,40 +23,15 @@
     }
 
     img {
-      max-width: 60%;
+      max-width: 50%;
       height: auto;
-      margin-bottom: 20px;
-      margin-top: 0px
+      margin-bottom: 10px;
     }
 
     p {
       font-size: 20px;
       font-family: BloodVaca;
       margin-bottom: 200px;
-      text-align: center;
-    }
-
-    h8 {
-      font-size: 20px;
-      font-family: BloodVaca;
-      margin-bottom: 0px;
-      color: #cff5bc;
-      text-align: center;
-    }
-
-    h7 {
-      font-size: 20px;
-      font-family: BloodVaca;
-      margin-bottom: 30px;
-      color: #ffdb6c;
-      text-align: center;
-    }
-
-    a {
-      font-size: 17px;
-      font-family: BloodVaca;
-      color: #89e75a;
-      margin-bottom: 15px;
       text-align: center;
     }
 
@@ -100,32 +75,33 @@
       text-align: center;
     }
   </style>
+  <script src="core.js"></script>
+  <script src="sha256.js"></script>
 </head>
 <body>
-<h7>Atenção: A imagem a seguir é para<br>quem está jogando no celular.</h7>
-  <img src="Este é o Nome da Imagem.png" alt="Esta é a Descrição da Imagem">
-  <p>É sempre bom que você verifique todos esses<br>lugares (nome da aba e descrição da<br>imagem) antes de você tentar resolver o<br>enigma, pois nesses lugares terão pistas.<br>
-<br>
-Resposta: Entendi</p>
+  <img src="Cace.png" alt="Rei">
+  <p>Aquele que cravou a pedra, que me guie<br>com sua כוכב, ponha-a em sua inicial.</p>
   
   <label for="resposta"><i>Resposta:</i></label>
   <input type="text" id="resposta" name="resposta">
   <button onclick="verificarResposta()">Enviar</button>
 
   <img id="iconeDica" src="Lâmpada.png" alt="Ícone de Dica" onclick="exibirDica()">
-  <div id="caixaDica">Aqui é onde fica a dica.</div>
+  <div id="caixaDica">Dica: Olhe para quais letras as pontas indicam.</div>
 
   <script>
-    function verificarResposta() {
-      var respostaInserida = document.getElementById("resposta").value.toLowerCase();
-      var respostaCorreta = "entendi"; 
+  function verificarResposta() {
+    var respostaInserida = document.getElementById("resposta").value;
+    var respostaCorretaHash = "ba1ca8391e6f5385c8f396269868f8ef9be0d85c6d425dde0dce5a00a8528120";
 
-      if (respostaInserida === respostaCorreta) {
-        window.location.href = "respostaCorretaHash, 0.1)"; 
-      } else {
-        alert("Resposta incorreta. Resposta: entendi.");
-      }
+    var hashInserida = CryptoJS.SHA256(respostaInserida).toString();
+
+    if (hashInserida === respostaCorretaHash) {
+      window.location.href = "respostaCorretaHash, 0.0)";
+    } else {
+      alert("❌ Resposta incorreta. (Verifique se a primeira letra está maiúscula ou se há algum espaço no final.)");
     }
+  }
 
     function exibirDica() {
       var caixaDica = document.getElementById("caixaDica");
@@ -135,11 +111,5 @@ Resposta: Entendi</p>
       }, 5000);
     }
   </script>
-<h8>Criador:</h8>
-<a href="https://api.whatsapp.com/send?phone=5521965717949">-☕-</a>
-<br>
-<h8>Canal Whatsapp:</h8>
-<a href="https://whatsapp.com/channel/0029VaKklnWKbYMK29QCSf1v">-👥-</a>
-<p>Boa sorte.</p>
 </body>
 </html>
