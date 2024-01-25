@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Primeira Região.</title>
+  <title>Nome</title>
   <style>
     body {
       background-color: black;
@@ -35,10 +35,10 @@
       text-align: center;
     }
 
-    a {
-      font-size: 20px;
+    h7 {
+      font-size: 40px;
       font-family: BloodVaca;
-      color: white;
+      margin-bottom: 40px;
       text-align: center;
     }
 
@@ -86,25 +86,27 @@
   <script src="sha256.js"></script>
 </head>
 <body>
-  <img src="vexilo.png" alt="vexilo" title="">
-  <p>500-565 600-530 | 47, 100%, 52% | <a href="https://meu-diario.github.io/decifre-os/Atelier-Rouge.html">Atelier Rouge</a></p>
+  <h7>(1+√5)/2</h7>
+  <p>Os malditos bastardos dos meus primos, adoraria que eles não existissem.<br>
+<br>
+6 2 13 17 12 5 15 7 11 18 3 19</p>
   
   <label for="resposta"><i>Resposta:</i></label>
   <input type="text" id="resposta" name="resposta">
   <button onclick="verificarResposta()">Enviar</button>
 
   <img id="iconeDica" src="Lâmpada.png" alt="Ícone de Dica" onclick="exibirDica()">
-  <div id="caixaDica">Dica: Já pensou em estudar vexilologia?</div>
+  <div id="caixaDica">Dica: Sinta o doce aroma dos quilates.</div>
 
   <script>
   function verificarResposta() {
     var respostaInserida = document.getElementById("resposta").value;
-    var respostaCorretaHash = "cebf01c23768620db3a78f75cb8ef60b8af35c495217599be9c0b748c047d66f";
+    var respostaCorretaHash = "823a25ae82adf2d407f2bac2e585839fa3cfed69cf3685d646757b8ae0290902";
 
     var hashInserida = CryptoJS.SHA256(respostaInserida).toString();
 
     if (hashInserida === respostaCorretaHash) {
-      window.location.href = "respostaCorretaHash, 1.5)";
+      window.location.href = "respostaCorretaHash, 0.0)";
     } else {
       alert("❌ Resposta incorreta. (Verifique se a primeira letra está maiúscula ou se há algum espaço no final.)");
     }
