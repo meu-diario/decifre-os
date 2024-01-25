@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>100 jardas</title>
+  <title>Primeira Região.</title>
   <style>
     body {
       background-color: black;
@@ -32,6 +32,13 @@
       font-size: 20px;
       font-family: BloodVaca;
       margin-bottom: 200px;
+      text-align: center;
+    }
+
+    a {
+      font-size: 20px;
+      font-family: BloodVaca;
+      color: white;
       text-align: center;
     }
 
@@ -79,25 +86,25 @@
   <script src="sha256.js"></script>
 </head>
 <body>
-  <img src="Teste.png" alt="Gatito de guerra." title="Gatito de guerra.">
-  <p>abra os olhos</p>
+  <img src="vexilo.png" alt="vexilo" title="">
+  <p>500-565 600-530 | 47, 100%, 52% | <a href="https://meu-diario.github.io/decifre-os/Atelier-Rouge.html">Atelier Rouge</a></p>
   
   <label for="resposta"><i>Resposta:</i></label>
   <input type="text" id="resposta" name="resposta">
   <button onclick="verificarResposta()">Enviar</button>
 
   <img id="iconeDica" src="Lâmpada.png" alt="Ícone de Dica" onclick="exibirDica()">
-  <div id="caixaDica">Dica: exemplo</div>
+  <div id="caixaDica">Dica: Já pensou em estudar vexilologia?</div>
 
   <script>
   function verificarResposta() {
     var respostaInserida = document.getElementById("resposta").value;
-    var respostaCorretaHash = "ba1ca8391e6f5385c8f396269868f8ef9be0d85c6d425dde0dce5a00a8528120";
+    var respostaCorretaHash = "cebf01c23768620db3a78f75cb8ef60b8af35c495217599be9c0b748c047d66f";
 
     var hashInserida = CryptoJS.SHA256(respostaInserida).toString();
 
     if (hashInserida === respostaCorretaHash) {
-      window.location.href = "respostaCorretaHash, 1.0)";
+      window.location.href = "respostaCorretaHash, 0.0)";
     } else {
       alert("❌ Resposta incorreta. (Verifique se a primeira letra está maiúscula ou se há algum espaço no final.)");
     }
