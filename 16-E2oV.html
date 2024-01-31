@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nome</title>
+  <title>-2</title>
   <style>
     body {
       background-color: black;
@@ -23,7 +23,7 @@
     }
 
     img {
-      max-width: 50%;
+      max-width: 45%;
       height: auto;
       margin-bottom: 10px;
     }
@@ -32,13 +32,6 @@
       font-size: 20px;
       font-family: BloodVaca;
       margin-bottom: 200px;
-      text-align: center;
-    }
-
-    h7 {
-      font-size: 40px;
-      font-family: BloodVaca;
-      margin-bottom: 40px;
       text-align: center;
     }
 
@@ -86,26 +79,25 @@
   <script src="sha256.js"></script>
 </head>
 <body>
-  <h7>(1+√5)/2</h7>
-  <img src="Aأناeהוא.png" alt="Capa de livro." title="Retire-os daqui.">
-  <p>6 2 13 17 12 5 15 7 11 18 3 19</p>
+  <img src="George Washington.png" alt="George Washington" title="">
+  <p>Ele esconde sua Espada nos céus; talvez<br>ninguém a encontre, mas ela está a<br>fulgurar.</p>
   
   <label for="resposta"><i>Resposta:</i></label>
   <input type="text" id="resposta" name="resposta">
   <button onclick="verificarResposta()">Enviar</button>
 
   <img id="iconeDica" src="Lâmpada.png" alt="Ícone de Dica" onclick="exibirDica()">
-  <div id="caixaDica">Dica: Sinta o doce aroma dos kilates.</div>
+  <div id="caixaDica">Dica: As conexões do céu te guiaram até a <i>espada do gigante.</i></div>
 
   <script>
   function verificarResposta() {
     var respostaInserida = document.getElementById("resposta").value;
-    var respostaCorretaHash = "823a25ae82adf2d407f2bac2e585839fa3cfed69cf3685d646757b8ae0290902";
+    var respostaCorretaHash = "62c16fac11b3d779c62e5144b222534283e9221ab6e05b401182b341bc8c9ff1";
 
     var hashInserida = CryptoJS.SHA256(respostaInserida).toString();
 
     if (hashInserida === respostaCorretaHash) {
-      window.location.href = "respostaCorretaHash, 1.6)";
+      window.location.href = "respostaCorretaHash, 0.0)";
     } else {
       alert("❌ Resposta incorreta. (Verifique se a primeira letra está maiúscula ou se há algum espaço no final.)");
     }
